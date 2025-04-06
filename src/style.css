@@ -658,8 +658,8 @@ h3 {
   border: 1px solid var(--LightBlue);
   color: var(--Black);
   transition: all 0.3s;
-  height: 300px; /* or whatever value suits your design */
-  width: 500px;  /* optional: you can set fixed width too */
+  height: 400px; /* or whatever value suits your design */
+  width: 600px;  /* optional: you can set fixed width too */
   padding: 40px; /* adjust padding to fit inside fixed height */
 }
 
