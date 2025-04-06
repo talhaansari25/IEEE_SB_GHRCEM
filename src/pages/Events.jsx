@@ -16,7 +16,7 @@ function Event() {
           <li><Link to="/">HOME</Link></li>
           <li><Link to="/#team">TEAM</Link></li>
           <li><Link to="/prize">PRIZES</Link></li>
-          <li><Link to="/event">EVENTS</Link></li>
+          <li><Link to="/events">EVENTS</Link></li>
           <li><Link to="/#achievements">ACHIEVEMENTS</Link></li>
           <li><Link to="/contact">CONTACT</Link></li>
         </ul>
