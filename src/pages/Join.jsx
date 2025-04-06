@@ -7,6 +7,11 @@ import { useEffect } from "react";
 
 
 const Join = () => {
+
+   useEffect(() => {
+      document.title = "JOIN IEEE GHRCEM ";
+    }, []);
+
   return (
     <>
       <head>
