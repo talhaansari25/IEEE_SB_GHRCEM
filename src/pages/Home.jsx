@@ -56,8 +56,29 @@ function Home() {
         <div className="ab-intro">
           <h1>About IEEE SB GHRCEM</h1>
           <p>
-            Welcome to the IEEE Student Branch GHRCEM...
-            Connect with us on social media and stay updated on our latest events, initiatives, and opportunities for involvement.
+          Welcome to the IEEE Student Branch GHRCEM, a vibrant community of aspiring engineers and technology enthusiasts
+        at G. H. Raisoni College of Engineering & Management (GHRCEM). Established with the mission of fostering
+        innovation, collaboration, and professional development, our club serves as a platform for students to explore
+        their interests in various fields of engineering and technology.
+        <br />
+        <br/>
+        At IEEE GHRCEM, we believe in the power of knowledge-sharing and hands-on learning experiences. Through a
+        diverse range of activities and events, we aim to provide our members with opportunities to expand their
+        technical skills, network with industry professionals, and make a positive impact on their communities
+        <br/>
+        <br/>
+        Our club is affiliated with the Institute of Electrical and Electronics Engineers (IEEE), the world's largest
+        technical professional organization dedicated to advancing technology for the benefit of humanity. As part of
+        the IEEE community, we have access to a wealth of resources, including publications, conferences, and
+        professional development opportunities, which we leverage to enhance the educational experience of our members.
+        <br/>
+        <br/>
+        Join us as we embark on a journey of discovery, creativity, and excellence. Together, we'll shape the future of
+        technology and make a difference in the world.
+        <br/>
+        <br/>
+        Connect with us on social media and stay updated on our latest events, initiatives, and opportunities for
+        involvement.
           </p>
         </div>
         <div className="gallery">
