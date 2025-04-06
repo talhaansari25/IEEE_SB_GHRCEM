@@ -15,6 +15,10 @@ const Contact = () => {
     window.hideMenu = hideMenu;
   }, []);
 
+   useEffect(() => {
+      document.title = "IEEE GHRCEM Contact ";
+    }, []);
+
   return (
     <>
       <section className="sub-header">
