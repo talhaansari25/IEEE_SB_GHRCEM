@@ -1,8 +1,14 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import "../style.css";
+import { useEffect } from "react";
 
 function Prize() {
+
+  useEffect(() => {
+    document.title = "IEEE GHRCEM Prizes ";
+  }, []);
+
   return (
     <div>
       <div className="overlay"></div>
