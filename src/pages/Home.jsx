@@ -210,17 +210,40 @@ function Home() {
       </section>
 
       <section id="achievements" className="achv">
-        <h1>Awards & Achievements</h1>
-        <div className="achv-intro">
-          <p>Awards and Achievements of IEEE Student Branch GHRCEM received by branch counsellor</p>
-        </div>
-        <div className="row">
-          <div className="achv-col">
-            <img src="/Images/BE.jpg" alt="" />
-            <h3>Best Emerging IEEE Student Branch Award - 2018</h3>
-          </div>
-        </div>
-      </section>
+    <h1>Awards & Achievements</h1>
+    <div className="achv-intro">
+      <p>
+       Awards and Achievements of IEEE Student Branch GHRCEM recived by branch counsellor 
+      </p>
+    </div>
+    <div className="row">
+      <div className="achv-col">
+        <img src="Images/BE.jpg" alt="" />
+        <h3>Best Emerging IEEE Student Branch Award - 2018</h3>
+      </div>
+      <div className="achv-col">
+        <img src="Images/BBC.jpg" alt="" />
+        <h3>Best Branch Counselor of the Year Award 2020</h3>
+      </div>
+
+      <div className="achv-col">
+        <img src="Images/bsv.jpg" alt="" />
+        <h3>Best Student Volunteer of the Year Award 2020</h3>
+      </div>
+      <div className="achv-col">
+        <img src="Images/bpv.jpg" alt="" />
+        <h3>Best Professional Volunteer of the Year Award 2021</h3>
+      </div>
+      <div className="achv-col">
+        <img src="Images/av.jpg" alt="" />
+        <h3>Appreciation for mentoring a project sponsored by IEEE Pune Section 2021</h3>
+      </div>
+      <div className="achv-col">
+        <img src="Images/bwe.jpg" alt="" />
+        <h3>Best Women in Engineering Award 2022</h3>
+      </div>
+    </div>
+  </section>
 
       <section className="testimonial">
         <h1>Our Testimonials</h1>
@@ -228,14 +251,18 @@ function Home() {
           <div className="testimonial-col">
             <img src="/Images/rk.jpg" alt="" />
             <div>
-              <p>"Proudly chaired the IEEE Student Chapter..."</p>
+            <p>
+            "Proudly chaired the IEEE Student Chapter, organizing flagship events and securing funding, fostering impactful collaborations within the IEEE community."
+          </p>
               <h3>Rudraksh Kurpe</h3>
             </div>
           </div>
           <div className="testimonial-col">
             <img src="/Images/pr.png" alt="" />
             <div>
-              <p>"Serving as Chair of the IEEE Student Chapter..."</p>
+            <p>
+            "Serving as Chair of the IEEE Student Chapter for the last year was an enriching experience. I had the opportunity to lead a passionate team, drive impactful initiatives, and contribute to the growth of our technical community through innovative events and meaningful collaborations."
+          </p>
               <h3>Purvesh Mule</h3>
             </div>
           </div>
@@ -250,7 +277,11 @@ function Home() {
       <section className="footer">
         <h1>Thanks for visit </h1>
         <div className="footer-intro">
-          <p>Thank you for your interest in the IEEE Student Branch Club at GHRCEM...</p>
+        <p>
+        Thank you for your interest in the IEEE Student Branch Club at GHRCEM! Whether you have a question, feedback, or would like to get involved, we're here to help.
+        <br/> Connect with us on social media to stay updated on our latest events, initiatives, or you can with contact us just by clicking on contact us button.
+        <br/>
+      </p>
           <Link to="/contact" id="cs" className="hero-btn">CONTACT US</Link>
         </div>
         <div className="icons">
