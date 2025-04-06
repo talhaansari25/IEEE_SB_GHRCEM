@@ -1,9 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../style.css";
-
+import { useEffect } from "react";
 
 function Event() {
+
+   useEffect(() => {
+      document.title = "IEEE GHRCEM Events ";
+    }, []);
   return (
     <>
       <div className="overlay"></div>
