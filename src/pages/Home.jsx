@@ -93,7 +93,17 @@ function Home() {
             <img src="/Images/sk.jpeg" alt="Branch Counselor" />
           </div>
           <div className="wr">
-            <p><strong>Dr. Simran Khiani Ma'am</strong> is an esteemed member of our academic community...</p>
+          <p><strong>Dr. Simran Khiani Ma'am</strong> is an esteemed member of our academic community, serving as the
+          Counselor for the IEEE Student Branch GHRCEM.
+          <br/><br/>Ma'am brings invaluable insight and guidance to our student branch club. Her dedication to fostering a
+          culture of innovation and excellence inspires our members to reach new heights in their academic and
+          professional pursuits.
+          <br/><br/>IEEE GHRCEM will be essential to the global technical community and to technical professionals
+          everywhere, and be universally recognized for the contributions of technology and of technical professionals
+          in improving global conditions.
+          <br/><br/> We are honored to have Dr. Simran Khiani Ma'am as our counselor, guiding us towards success in our
+          journey of technological exploration and advancement.
+        </p>
           </div>
         </div>
       </section>
