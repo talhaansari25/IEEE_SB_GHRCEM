@@ -108,22 +108,82 @@ function Home() {
         </div>
       </section>
 
-      <section id="team" className="team">
-        <h1>Meet Our Core Team Members</h1>
-        <div className="team-container">
-          <div className="team-row">
-            <div className="team-col">
-              <div className="image-wrapper">
-                <a href="https://www.linkedin.com/in/ayan-shaikh8805/" target="_blank" rel="noopener noreferrer">
-                  <img src="/Images/ch.png" alt="Ayan Shaikh" />
-                  <div className="layer"><h3>BRANCH CHAIR</h3></div>
-                </a>
-              </div>
-              <div className="aa"><h3 className="name">Ayan Shaikh</h3></div>
-            </div>
+      <section id="team" class="team">
+    <h1>Meet Our Core Team Members</h1>
+  
+    <div className="team-container">
+      <div className="team-row">
+        {/* <!-- Ayan Shaikh --> */}
+        <div className="team-col">
+          <div className="image-wrapper">
+            <a href="https://www.linkedin.com/in/ayan-shaikh8805/" target="_blank">
+              <img src="Images/ch.png" alt="Ayan Shaikh" />
+              <div className="layer"><h3>BRANCH CHAIR</h3></div>
+            </a>
           </div>
+          <div className="aa"><h3 className="name">Ayan Shaikh</h3></div>
         </div>
-      </section>
+  
+        {/* <!-- Sumeet Gupta --> */}
+        <div className="team-col">
+          <div className="image-wrapper">
+            <a href="https://www.linkedin.com/in/sumeet-gupta-ba2216209/" target="_blank">
+              <img src="Images/Sumeet Gupta.jpg" alt="Sumeet Gupta" />
+              <div className="layer"><h3>VICE CHAIR</h3></div>
+            </a>
+          </div>
+          <div className="aa"><h3 className="name">Sumeet Gupta</h3></div>
+        </div>
+  
+        {/* <!-- Sakshi Kute --> */}
+        <div className="team-col">
+          <div className="image-wrapper">
+            <a href="https://www.linkedin.com/in/sakshi-kute-159072287/" target="_blank">
+              <img src="Images/Sakshi Kute (1).jpg" alt="Sakshi Kute" />
+              <div className="layer"><h3>TREASURER</h3></div>
+            </a>
+          </div>
+          <div className="aa"><h3 className="name">Sakshi Kute</h3></div>
+        </div>
+      </div>
+  
+      <div className="team-row">
+        {/* <!-- Shruti Tiwari --> */}
+        <div className="team-col">
+          <div className="image-wrapper">
+            <a href="https://www.linkedin.com/in/shrutiptiwari/" target="_blank">
+              <img src="Images/shr.jpg" alt="Shruti Tiwari" />
+              <div className="layer"><h3>SECRETARY</h3></div>
+            </a>
+          </div>
+          <div className="aa"><h3 className="name">Shruti Tiwari</h3></div>
+        </div>
+  
+        {/* <!-- Rudraksh Raut --> */}
+        <div className="team-col">
+          <div className="image-wrapper">
+            <a href="https://www.linkedin.com/in/rudraksh-raut/" target="_blank">
+              <img src="Images/Rudraksh Raut .jpg" alt="Rudraksh Raut" />
+              <div className="layer"><h3>WEB MASTER 1</h3></div>
+            </a>
+          </div>
+          <div className="aa"><h3 className="name">Rudraksh Raut</h3></div>
+        </div>
+  
+        {/* <!-- Talha Ansari --> */}
+        <div className="team-col">
+          <div className="image-wrapper">
+            <a href="https://www.linkedin.com/in/talha-ansari-22189b1bb/" target="_blank">
+              <img src="Images/talha.jpg" alt="Talha Ansari" />
+              <div className="layer"><h3>WEB MASTER 2</h3></div>
+            </a>
+          </div>
+          <div className="aa"><h3 className="name">Talha Ansari</h3></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
 
       <section id="ep">
         <div className="ep-container">
