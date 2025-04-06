@@ -9,6 +9,10 @@ function Home() {
     }, 1000);
   }, []);
 
+   useEffect(() => {
+      document.title = "IEEE GHRCEM ";
+    }, []);
+
   const showMenu = () => {
     document.getElementById("navLinks").style.right = "0";
   };
