@@ -1,14 +1,20 @@
-import React from "react";
-import '../style.css';
+import React, { useEffect } from "react";
+import "../style.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Benefits = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
   return (
-    <div className="benefit-column">
-      <h2>
+    <div className="benefit-column" data-aos="fade-up">
+      <h2 data-aos="zoom-in">
         BENEFITS <br />
         <span>OF JOINING IEEE GHRCEM!!</span>
       </h2>
-      <p>
+      <p data-aos="fade-up">
         IEEE Membership – More Than Just a Title
         <br /><br />
         IEEE isn’t just an organization; it’s a community of innovators, thinkers, and problem-solvers. As a member, you get access to global conferences, top-tier research, exclusive workshops, and technical training that put you ahead of the curve. Your @ieee.org email ID isn’t just an address—it’s an entry pass to a network of industry leaders, researchers, and like-minded peers across the world.
