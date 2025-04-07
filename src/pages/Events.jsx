@@ -1,13 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../style.css";
-import { useEffect } from "react";
 
-function Event() {
+function Events() {
+  useEffect(() => {
+    document.title = "IEEE GHRCEM Events ";
+  }, []);
 
-   useEffect(() => {
-      document.title = "IEEE GHRCEM Events ";
-    }, []);
   return (
     <>
       <div className="overlay"></div>
@@ -19,14 +18,14 @@ function Event() {
         <ul className="menu desktop-menu">
           <li><Link to="/">HOME</Link></li>
           <li><Link to="/#team">TEAM</Link></li>
-          <li><Link to="/prize">PRIZES</Link></li>
+          <li><Link to="/prizes">PRIZES</Link></li>
           <li><Link to="/events">EVENTS</Link></li>
           <li><Link to="/#achievements">ACHIEVEMENTS</Link></li>
           <li><Link to="/contact">CONTACT</Link></li>
         </ul>
 
-        {/* Toggle menu screen */}
         <i className="bi bi-list" id="toggle-menu"></i>
+
         <div className="mobile-menu">
           <i className="bi bi-x" id="close-btn"></i>
           <ul className="menu menu-items">
@@ -71,7 +70,7 @@ function Event() {
             <div className="two-text">
               <h3 className="title">WORKSHOP</h3>
               <p className="detail">
-                Topic: Workshop On Artificial Intelligence In Healthcare , GHRCEM Pune
+                Topic: Workshop On Artificial Intelligence In Healthcare, GHRCEM Pune
                 <br /> 20th OCTOBER 2023
               </p>
             </div>
@@ -85,7 +84,7 @@ function Event() {
               <h3 className="title">CELEBRATION</h3>
               <p className="detail">
                 IEEE Day 2023 celebration at GHRCEM Pune with Branch Counselor DR.SIMRAN KHIANI MA'AM.
-                <br />14th OCTOBER 2023
+                <br /> 14th OCTOBER 2023
               </p>
             </div>
           </div>
@@ -95,10 +94,10 @@ function Event() {
               <img src="Images/wo.jpg" alt="project-thumbnail" />
             </div>
             <div className="four-text">
-              <h3 className="title">WORSHOP</h3>
+              <h3 className="title">WORKSHOP</h3>
               <p className="detail">
                 Topic: Developing Real Time Applications Using IOT And Machine Learning
-                <br />24th - 28th JULY 2023
+                <br /> 24th - 28th JULY 2023
               </p>
             </div>
           </div>
@@ -117,11 +116,8 @@ function Event() {
           </div>
         </div>
       </div>
-
-      {/* Local JS file */}
-      <script src="js/uiux.js"></script>
     </>
   );
 }
 
-export default Event;
+export default Events;
