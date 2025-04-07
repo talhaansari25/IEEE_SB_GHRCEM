@@ -2,6 +2,7 @@ import React from "react";
 import "../style.css";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import Footer from "../components/Footer";
 
 const Contact = () => {
   useEffect(() => {
@@ -31,7 +32,7 @@ const Contact = () => {
             <ul>
               <li><Link to="/">HOME</Link></li>
               <li><a href="#team">TEAM</a></li>
-              <li><Link to="/prize">PRIZES</Link></li>
+              <li><Link to="/prizes">PRIZES</Link></li>
               <li><Link to="/event">EVENTS</Link></li>
               <li><a href="#achievements">ACHIEVEMENTS</a></li>
               <li><Link to="/contact">CONTACT</Link></li>
@@ -74,7 +75,7 @@ const Contact = () => {
             </div>
 
             <div>
-              <a href="mailto:ieee_comp@ghrcem.raisoni.net" className="fa fa-envelope-o"></a>
+              <a href="mailto:ieee_comp@ghrcem.raisoni.net" className="fa fa-envelope"></a>
               <span>
                 <h5>ieee_comp@ghrcem.raisoni.net</h5>
                 <p>Email us for queries</p>
@@ -82,7 +83,7 @@ const Contact = () => {
             </div>
 
             <div>
-              <a href="https://www.linkedin.com/company/ieee-ghrcem/posts/?feedView=all" className="fa fa-linkedin"></a>
+              <a href="https://www.linkedin.com/company/ieee-ghrcem/posts/?feedView=all" className="fa-brands fa fa-linkedin"></a>
               <span>
                 <h5>@IEEE Student Branch GHRCEM</h5>
                 <p>Connect with us on LinkedIn</p>
@@ -90,7 +91,7 @@ const Contact = () => {
             </div>
 
             <div>
-              <a href="https://www.instagram.com/ieee_ghrcem_pune/" className="fa fa-instagram"></a>
+              <a href="https://www.instagram.com/ieee_ghrcem_pune/" className="fa-brands fa fa-instagram"></a>
               <span>
                 <h5>@ieee_ghrcem_pune</h5>
                 <p>Follow us on Instagram</p>
@@ -98,7 +99,7 @@ const Contact = () => {
             </div>
 
             <div>
-              <a href="https://www.facebook.com/ieee.ghrce/?locale=hi_IN" className="fa fa-facebook"></a>
+              <a href="https://www.facebook.com/ieee.ghrce/?locale=hi_IN" className="fa-brands fa fa-facebook"></a>
               <span>
                 <h5>@IEEE SB G. H. Raisoni College of Engineering</h5>
                 <p>Follow us on Facebook</p>
@@ -106,7 +107,7 @@ const Contact = () => {
             </div>
 
             <div>
-              <a href="" className="fa fa-twitter"></a>
+              <a href="" className="fa-brands fa fa-twitter"></a>
               <span>
                 <h5>@ieee_ghrcem_pune</h5>
                 <p>Follow us on Twitter</p>
