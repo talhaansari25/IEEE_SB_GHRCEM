@@ -1,10 +1,15 @@
-import React from "react";
-import "../style.css";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
+import "../style.css";
 import Footer from "../components/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Contact = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   useEffect(() => {
     const showMenu = () => {
       document.getElementById("navLinks").style.right = "0";
@@ -16,13 +21,13 @@ const Contact = () => {
     window.hideMenu = hideMenu;
   }, []);
 
-   useEffect(() => {
-      document.title = "IEEE GHRCEM Contact ";
-    }, []);
+  useEffect(() => {
+    document.title = "IEEE GHRCEM Contact ";
+  }, []);
 
   return (
     <>
-      <section className="sub-header">
+      <section className="sub-header" data-aos="fade-down">
         <nav>
           <Link to="/">
             <img src="Images/logo.png" alt="" />
@@ -31,19 +36,19 @@ const Contact = () => {
             <i className="fa fa-times" onClick={() => window.hideMenu()}></i>
             <ul>
               <li><Link to="/">HOME</Link></li>
-              <li><a href="#team">TEAM</a></li>
+              <li><a href="/#team">TEAM</a></li>
               <li><Link to="/prizes">PRIZES</Link></li>
-              <li><Link to="/event">EVENTS</Link></li>
-              <li><a href="#achievements">ACHIEVEMENTS</a></li>
+              <li><Link to="/events">EVENTS</Link></li>
+              <li><a href="/#achievements">ACHIEVEMENTS</a></li>
               <li><Link to="/contact">CONTACT</Link></li>
             </ul>
           </div>
           <i className="fa fa-bars" onClick={() => window.showMenu()}></i>
         </nav>
-        <h1>Contact Us</h1>
+        <h1 data-aos="zoom-in">Contact Us</h1>
       </section>
 
-      <section className="location">
+      <section className="location" data-aos="fade-up">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.798625014627!2d73.9725971!3d18.5733721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c38275a673c5%3A0x368b6a8fa28346d!2sG%20H%20RAISONI%20College%20OF%20ENGINEERING%20AND%20Management%2C%20PUNE!5e0!3m2!1sen!2sin!4v1712348034912!5m2!1sen!2sin"
           width="600"
@@ -57,12 +62,12 @@ const Contact = () => {
 
       <section className="contact-us">
         <div className="row">
-          <div className="contact-col">
+          <div className="contact-col" data-aos="fade-right">
             <div>
               <i className="fa fa-home"></i>
               <span>
                 <h5>GH Raisoni College of Engineering and Management</h5>
-                <p>New Gate No. 1200 , Domkhel Road , Wagholi , Pune 412207, Maharashtra, India.</p>
+                <p>New Gate No. 1200, Domkhel Road, Wagholi, Pune 412207, Maharashtra, India.</p>
               </span>
             </div>
 
@@ -70,7 +75,7 @@ const Contact = () => {
               <i className="fa fa-phone"></i>
               <span>
                 <h5>+91 809604787185</h5>
-                <p>call us for queries</p>
+                <p>Call us for queries</p>
               </span>
             </div>
 
@@ -107,7 +112,7 @@ const Contact = () => {
             </div>
 
             <div>
-              <a href="" className="fa-brands fa fa-twitter"></a>
+              <a href="#" className="fa-brands fa fa-twitter"></a>
               <span>
                 <h5>@ieee_ghrcem_pune</h5>
                 <p>Follow us on Twitter</p>
@@ -115,7 +120,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="contact-col">
+          <div className="contact-col" data-aos="fade-left">
             <iframe
               src="https://forms.gle/hthfcSvb95Ad4cWH9"
               width="100%"
@@ -131,17 +136,16 @@ const Contact = () => {
         </div>
       </section>
 
-      <section className="footer">
-        <h1>Thanks for visit </h1>
-        <div className="footer-intro">
+      <section className="footer" data-aos="zoom-in-up">
+        <h1>Thanks for visit</h1>
+        <div className="footer-intro" data-aos="fade-up">
           <p>
             Thank you for your interest in the IEEE Student Branch Club at GHRCEM! Whether you have a question, feedback, or would like to get involved, we're here to help.
-            <br /> Connect with us on social media to stay updated on our latest events, initiatives, and announcements Feel free to reach out to us using any of the following methods:
+            <br /> Connect with us on social media to stay updated on our latest events, initiatives, and announcements. Feel free to reach out to us using any of the following methods:
             <br />
           </p>
-          <Link to="/join" target="_blank" id="cs" className="hero-btn">JOIN US</Link>
+          <Link to="/join" target="_blank" id="cs" className="hero-btn" data-aos="zoom-in">JOIN US</Link>
         </div>
-
         <p>© 2024 All Rights Reserved. Design & Developed by Talha Ansari</p>
       </section>
     </>
