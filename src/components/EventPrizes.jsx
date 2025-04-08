@@ -3,32 +3,52 @@ import { Link } from "react-router-dom";
 import "../style.css";
 import "../section.css";
 
-
-
 export default function EventPrizes() {
+  const eventPrizeData = [
+    {
+      id: "event",
+      link: "/events",
+      iconClass: "fas fa-user-group",
+      title: "Events",
+      description: "Events conducted by IEEE GHRCEM throughout the years",
+      animation: {
+        type: "fade-right",
+        delay: "200"
+      }
+    },
+    {
+      id: "prize",
+      link: "/prizes",
+      iconClass: "fas fa-trophy",
+      title: "Prizes",
+      description: "Awards and Prizes received by our IEEE SB Students",
+      animation: {
+        type: "fade-left",
+        delay: "400"
+      }
+    }
+  ];
+
   return (
     <section id="ep" data-aos="fade-up" data-aos-duration="1000">
       <div className="ep-container">
         <div className="ep-wrapper">
-          <div className="event" data-aos="fade-right" data-aos-delay="200">
-            <Link to="/events" className="card-view">
-              <div className="card-text">
-                <i className="fas fa-user-group"></i>
-                <h3 className="card-title">Events</h3>
-                <p>Events conducted by IEEE GHRCEM throughout the years</p>
-              </div>
-            </Link>
-          </div>
-
-          <div className="prize" data-aos="fade-left" data-aos-delay="400">
-            <Link to="/prizes" className="card-view">
-              <div className="card-text">
-                <i className="fas fa-trophy"></i>
-                <h3 className="card-title">Prizes</h3>
-                <p>Awards and Prizes received by our IEEE SB Students</p>
-              </div>
-            </Link>
-          </div>
+          {eventPrizeData.map((item) => (
+            <div
+              key={item.id}
+              className={item.id}
+              data-aos={item.animation.type}
+              data-aos-delay={item.animation.delay}
+            >
+              <Link to={item.link} className="card-view">
+                <div className="card-text">
+                  <i className={item.iconClass}></i>
+                  <h3 className="card-title">{item.title}</h3>
+                  <p>{item.description}</p>
+                </div>
+              </Link>
+            </div>
+          ))}
         </div>
       </div>
     </section>
