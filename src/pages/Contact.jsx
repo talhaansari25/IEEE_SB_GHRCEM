@@ -146,6 +146,7 @@ const Contact = () => {
           </p>
           <Link to="/join" target="_blank" id="cs" className="hero-btn" data-aos="zoom-in">JOIN US</Link>
         </div>
+        <br />
         <p>© 2025 All Rights Reserved. Design & Developed by Talha Ansari</p>
       </section>
     </>
