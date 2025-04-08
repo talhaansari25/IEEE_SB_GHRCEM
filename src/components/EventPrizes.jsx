@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import "../style.css";
 import "../section.css";
 
+
+
 export default function EventPrizes() {
   return (
     <section id="ep" data-aos="fade-up" data-aos-duration="1000">
