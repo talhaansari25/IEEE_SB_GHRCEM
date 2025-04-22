@@ -392,6 +392,7 @@ h3 {
 /* Main Section Styling */
 .faculty {
 
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -466,6 +467,7 @@ h3 {
   margin: auto;
   text-align: center;
   padding-top: 50px;
+  padding-bottom: 100px; /* or margin-bottom */
 }
 
 
@@ -483,6 +485,7 @@ h3 {
 
 
 .team-container {
+  
   display: flex;
   flex-direction: column;
   gap: 30px; /* Adds gap between two rows */
@@ -780,11 +783,17 @@ h3 {
 /* <!-- -------------------achievements section---------------- --> */
 
 .achv {
-  width: 80%;
+  background-image: linear-gradient(to top, #48c6ef 0%, #243c96 100%);
+
+  width: 100%;
   margin: auto;
   text-align: center;
-  padding-top: 100px;
+  padding: 40px;
+  padding-top: 80px;
+  color: white;
 }
+
+
 
 
 .achv-intro p {
@@ -824,6 +833,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-top: 50px;
   gap: 40px; /* Optional: space between items */
 }
 
